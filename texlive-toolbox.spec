@@ -1,13 +1,13 @@
-# revision 15878
+# revision 32260
 # category Package
 # catalog-ctan /macros/latex/contrib/toolbox
-# catalog-date 2008-02-29 19:54:55 +0100
+# catalog-date 2013-11-27 01:19:45 +0100
 # catalog-license lppl
 # catalog-version 5.1
 Name:		texlive-toolbox
 Version:	5.1
-Release:	2
-Summary:	Macros for writing indices, glossaries
+Release:	3
+Summary:	Tool macros
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/toolbox
 License:	LPPL
@@ -21,7 +21,7 @@ Requires(post):	texlive-kpathsea
 
 %description
 A package for (La)TeX which provides some macros which are
-convenient for writing indices, glossaries, or other macros. It
+convenient for writing indexes, glossaries, or other macros. It
 contains macros which support: implicit macros; fancy optional
 arguments; loops over tokenlists and itemlists; searching and
 splitting; controlled expansion; redefinition of macros; and
@@ -39,6 +39,7 @@ concatenated macro names; macros for text replacement.
 %files
 %{_texmfdistdir}/tex/latex/toolbox/toolbox.sty
 %doc %{_texmfdistdir}/doc/latex/toolbox/README
+%doc %{_texmfdistdir}/doc/latex/toolbox/toolbox.pdf
 %doc %{_texmfdistdir}/doc/latex/toolbox/toolbox.tex
 %doc %{_texmfdistdir}/doc/latex/toolbox/toolbox.txt
 #- source
@@ -54,16 +55,3 @@ concatenated macro names; macros for text replacement.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 5.1-2
-+ Revision: 757033
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 5.1-1
-+ Revision: 719778
-- texlive-toolbox
-- texlive-toolbox
-- texlive-toolbox
-
