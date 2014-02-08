@@ -6,7 +6,7 @@
 # catalog-version 5.1
 Name:		texlive-toolbox
 Version:	5.1
-Release:	2
+Release:	3
 Summary:	Macros for writing indices, glossaries
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/toolbox
