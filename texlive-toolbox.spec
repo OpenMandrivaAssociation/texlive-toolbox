@@ -6,7 +6,7 @@
 # catalog-version 5.1
 Name:		texlive-toolbox
 Version:	5.1
-Release:	9
+Release:	10
 Summary:	Tool macros
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/toolbox
