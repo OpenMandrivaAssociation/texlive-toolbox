@@ -1,19 +1,13 @@
-# revision 32260
-# category Package
-# catalog-ctan /macros/latex/contrib/toolbox
-# catalog-date 2013-11-27 01:19:45 +0100
-# catalog-license lppl
-# catalog-version 5.1
 Name:		texlive-toolbox
-Version:	5.1
-Release:	12
+Version:	32260
+Release:	1
 Summary:	Tool macros
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/toolbox
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/toolbox.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/toolbox.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/toolbox.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/toolbox.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/toolbox.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/toolbox.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -28,12 +22,12 @@ splitting; controlled expansion; redefinition of macros; and
 concatenated macro names; macros for text replacement.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -48,7 +42,8 @@ concatenated macro names; macros for text replacement.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
