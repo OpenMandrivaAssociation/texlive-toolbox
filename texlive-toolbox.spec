@@ -3,7 +3,7 @@ Version:	32260
 Release:	2
 Summary:	Tool macros
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/toolbox
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/toolbox
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/toolbox.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/toolbox.doc.r%{version}.tar.xz
